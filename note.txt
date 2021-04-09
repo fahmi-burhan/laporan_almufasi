@@ -1,0 +1,17 @@
+$pembina        = untuk menyimpan data dari table data_pembina;
+$santri         = untuk menyimpan data dari table data_santri;
+$bulan          = untuk menyimpan data dari table data_bulan;
+$list           = untuk menyimpan data dari table data_list;
+$syaqqah        = untuk menyimpan data dari table data_syaqqah;
+$pekan          = untuk menyimpan data salah satu column pekan dari table data_bulan;
+$lp_n           = untuk mmenyimpan nama table laporan;
+
+
+$id_s           = menyimpan id_sntr secara khusus;
+$id_p           = menyimpan id_pmbn secara khusus;
+$id_sy          = menyimpan id_syqh secara khusus;
+$_bulan         = menyimpan data bulan terkini;
+$pekan_u        = menyimpan nomor urut dari sebuah pekan;
+
+$id_search      = menyimpaan daftar id_santri yang kira-kira sedang dicari namanya dalam bentuk array mutlidimensional;
+$id_s_array     = menyimpaan daftar id_santri yang kira-kira sedang dicari namanya dalam bentuk array sederhana;
