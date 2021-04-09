@@ -1,0 +1,58 @@
+/* ///////////////////// */
+/* CSS KHUSUS LOGIN PAGE */
+/* ///////////////////// */
+#login {
+    top: 0;
+    left: 50%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  var(--box-shadow);
+    transform: translateX(-50%);
+}
+
+#login-wrapper {
+    padding: 20px;
+    font-size: 13px;
+    background-color: inherit;
+    box-shadow:  var(--box-shadow);
+}
+
+#login-title {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.login-fail {
+    text-align: center;
+    color: red;
+}
+
+.login-input input {
+    width: 250px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: var(--biru-btn);
+    outline: none;
+    border: none;
+}
+
+.login-input input::placeholder {
+    color: inherit;
+}
+
+.login-input button {
+    width: 100px;
+    margin: 10px;
+    margin-left: 150px;
+    padding: 7px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    background-color: var(--biru-text);
+    color: var(--putih-background);
+    border: none;
+}

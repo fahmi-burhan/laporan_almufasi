@@ -1,0 +1,167 @@
+/* /////////////////////// */
+/* CSS KHUSUS LIST SECTION */
+/* /////////////////////// */
+
+/* BAGIAN LIST-FILTER */
+/* ////////////////// */
+#list-filter {
+    width: 100%;
+    position: relative;
+}
+
+#list-filter-search {
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+#list-filter-search-input {
+    width: 100%;
+    padding: 5px 10px 5px 30px;
+    border-radius: 15px;
+    background-color: var(--biru-btn);
+    position: relative;
+    border: none;
+    box-shadow:  var(--btn-shadow);
+}
+
+#list-filter-search-input::placeholder {
+    color: var(--biru-text);
+}
+
+#list-filter-search i {
+    top: 50%;
+    left: 17px;
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--biru-text);
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+#list-filter-btn {
+    padding: 10px;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-filter-btn-btn {
+    width: 23%;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: var(--biru-btn);
+    color: var(--biru-text);
+    border: none;
+    cursor: pointer;
+    box-shadow:  var(--btn-shadow);
+}
+
+
+
+/* BAGIAN LIST-OPTION */
+/* ////////////////// */
+#list-option {
+    padding: 1px 5%;
+    font-size: 13px;
+}
+
+.option-filter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.option-filter li {
+    width: 30%;
+    margin: 3px;
+    padding: 3px 1px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--biru-btn);
+    cursor: pointer;
+    box-shadow:  var(--btn-shadow);
+}
+
+
+
+/* BAIGAN LIST-LIST */
+/* //////////////// */
+
+.list-content {
+    width: 100%;
+    padding: 3px 15px;
+    margin: 10px 0;
+    border-radius: 15px;
+    background-color: inherit;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  var(--box-shadow);
+}
+
+.list-content:last-child {
+    margin-bottom: 25px;
+}
+
+.list-content-wktu,
+.list-content-nama,
+.list-content-syqh {
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.list-content-wktu::before,
+.list-content-syqh::after {
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    content: "";
+    position: absolute;
+    background-color: var(--biru-line1);
+}
+
+.list-content-syqh::after {
+    top: 3px;
+}
+
+.list-content-nama h2 {
+    width: 61%;
+    position: relative;
+}
+
+.list-content-nama a {
+    width: 13%;
+    border-left: 1px solid var(--biru-line1);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-content-nama i {
+    font-size: 20px;
+    color: var(--biru-text);
+}
+
+
+#list-list-empty {
+    width: 100%;
+    padding: 3px 15px;
+    margin: 10px 0;
+    color: var(--biru-text);
+    text-align: center;
+}
+
+#list-list-empty i {
+    font-size: 100px;
+}

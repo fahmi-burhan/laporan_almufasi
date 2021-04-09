@@ -1,0 +1,174 @@
+/* ///////////////////// */
+/* Deklarasi Umum Global */
+/* ///////////////////// */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Dekalarasi Variabel */
+
+:root {
+    --putih-background: #f0f6ff;
+    --biru-text: #002f80;
+    --biru-range: #428eff;
+    --biru-btn: #d1e3ff;
+    --biru-line1: rgba(0, 99, 129, 0.2);
+    --biru-line2: rgba(0, 47, 128, 0.5);
+
+    --box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.08),
+                  -4px -4px 6px rgba(255, 255, 255, 1);
+    --btn-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08),
+                  -2px -2px 4px rgba(255, 255, 255, 1);
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    color: rgba(0, 0, 0, 1);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--putih-background);
+}
+
+
+
+/*        LINK        */
+/* ////////////////// */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:visited {
+    color: inherit;
+}
+
+
+
+/*        LIST        */
+/* ////////////////// */
+ul {
+    list-style-type: none;
+}
+
+
+
+/*   BUTTON  &  INPUT  */
+/* /////////////////// */
+button {
+    outline: none;
+}
+button:focus {
+    outline: none;
+    border: none;
+}
+input:focus {
+    outline: none;
+    border: none;
+}
+/* Arrow Button */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+/*    INDEX    PAGE    */
+/* /////////////////// */
+#wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 95vh;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    transition: .5s;
+}
+
+.page {
+    max-width: 34vw;
+    min-width: 100vw;
+    padding-bottom: 70px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--putih-background);
+    color: var(--biru-text);
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+.page::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/* DEKLARASI CLASS GLOBAL */
+/* ////////////////////// */
+.container {
+    width: 100%;
+    padding: 0 5%;
+}
+
+
+
+/*    NAVI    SECTION    */
+/* ///////////////////// */
+#navigation {
+    width: 100vw;
+    height: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10000;
+    position: fixed;
+    display: flex;
+    box-shadow: -5px -5px 15px #e9eff7,
+                5px 5px 15px #f7fdff;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.navi-btn {
+    flex-grow: 1;
+    border-radius: 0;
+    background-color: #f0f6ff;
+    color: #99c2ff;
+    border: none;
+    transition: 0.5s;
+}
+
+.navi-btn.active {
+    background-color: #ffffff;
+    color: #428eff;
+}
+
+
+/*   RESPONSIVE  PAGE   */
+/* //////////////////// */
+@media all and ( min-width: 800px ) {
+    #wrapper {
+        height: 100vh;
+    }
+    #navigation {
+        display: none;
+    }
+    .page {
+        min-width: auto;
+    }
+}
